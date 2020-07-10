@@ -6,5 +6,5 @@ resolver:
   serverID: Default-Server
 deployer:
   snapshotRepo: customer_service-maven-dev-amsterdam
-  releaseRepo: customer_service-maven-release-amsterdam
+  releaseRepo: customer_service-maven-staging-amsterdam
   serverID: Default-Server
