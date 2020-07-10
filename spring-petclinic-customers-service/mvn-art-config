@@ -1,10 +1,10 @@
 version: 1
 type: maven
 resolver:
-  snapshotRepo: libs-snapshot
-  releaseRepo: libs-release
+  snapshotRepo: customer_service-maven-virtual-amsterdam
+  releaseRepo: customer_service-maven-virtual-amsterdam
   serverID: Default-Server
 deployer:
-  snapshotRepo: libs-snapshot-local
-  releaseRepo: libs-release-local
+  snapshotRepo: customer_service-maven-dev-amsterdam
+  releaseRepo: customer_service-maven-release-amsterdam
   serverID: Default-Server
