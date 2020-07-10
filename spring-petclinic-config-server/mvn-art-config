@@ -1,0 +1,10 @@
+version: 1
+type: maven
+resolver:
+  snapshotRepo: config_server-maven-virtual-amsterdam
+  releaseRepo: config_server-maven-virtual-amsterdam
+  serverID: Default-Server
+deployer:
+  snapshotRepo: config_server-maven-dev-amsterdam
+  releaseRepo: config_server-maven-staging-amsterdam
+  serverID: Default-Server
