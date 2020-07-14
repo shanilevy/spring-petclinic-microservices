@@ -12,7 +12,7 @@ ARG REGISTRY=http://artifactory-unified-ha.soleng-us.jfrog.team/artifactory
 MAINTAINER Shani Levy
 
 # Download artifacts from Artifactory
-RUN curl $REGISTRY/discovery_server-maven-staging-amsterdam/org/springframework/samples/petclinic/client/spring-petclinic-discovery-server/2.3.1/spring-petclinic-discovery-server-2.3.1.jar --output server1.jar
+RUN curl $REGISTRY/discovery_server-maven-staging-amsterdam/org/springframework/samples/petclinic/discovery/spring-petclinic-discovery-server/2.3.1/spring-petclinic-discovery-server-2.3.1.jar --output server1.jar
 
 
 # Set JAVA OPTS + Static file location
