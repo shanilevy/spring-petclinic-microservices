@@ -12,7 +12,7 @@ ARG REGISTRY=http://artifactory-unified-ha.soleng-us.jfrog.team/artifactory
 MAINTAINER Shani Levy
 
 # Download artifacts from Artifactory
-RUN curl $REGISTRY/ui_server-maven-staging-amsterdam/org/springframework/samples/petclinic/api-gateway/spring-petclinic-api-gateway/2.3.1/spring-petclinic-api-gateway-2.3.1.jar --output server1.jar
+RUN curl $REGISTRY/ui_server-maven-staging-amsterdam/org/springframework/samples/petclinic/api/spring-petclinic-api-gateway/2.3.1/spring-petclinic-api-gateway-2.3.1.jar --output server1.jar
 
 
 # Set JAVA OPTS + Static file location
