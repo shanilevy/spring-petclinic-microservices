@@ -13,7 +13,7 @@ MAINTAINER Shani Levy
 EXPOSE 8761
 
 # Download artifacts from Artifactory
-RUN curl $REGISTRY/discovery_server-maven-staging-amsterdam/org/springframework/samples/petclinic/discovery/spring-petclinic-discovery-server/2.3.1/spring-petclinic-discovery-server-2.3.1.jar --output server1.jar
+RUN curl $REGISTRY/discovery_server-maven-staging-amsterdam/org/springframework/samples/petclinic/discovery/spring-petclinic-discovery-server/2.3.1/spring-petclinic-discovery-server-2.3.1.jar --output discovery_server1.jar
 
 
 # Set JAVA OPTS + Static file location
@@ -22,7 +22,7 @@ ENV JAVA_OPTS=""
 
 # Fire up our Spring Boot app
 #ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Dspring.profiles.active=remote -Djava.security.egd=file:/dev/./urandom -jar /app/server1.jar" ]
-ENTRYPOINT ["java","-jar","/app/server1.jar"]
+ENTRYPOINT ["java","-jar","/app/discovery_server1.jar"]
 
 
 #FROM openjdk:8-jdk-alpine
