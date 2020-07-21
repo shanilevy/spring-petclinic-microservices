@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      uri: http://localhost:8888
+      uri: http://localhost:8761
   application:
     name: discovery-server
 ---
@@ -9,4 +9,4 @@ spring:
   profiles: docker
   cloud:
     config:
-      uri: http://config-server:8888
+      uri: http://config-server:8761
