@@ -14,7 +14,7 @@ MAINTAINER Shani Levy
 EXPOSE 8080
 
 # Download artifacts from Artifactory
-RUN curl $REGISTRY/ui_server-maven-staging-amsterdam/org/springframework/samples/petclinic/api/spring-petclinic-api-gateway/2.3.1/spring-petclinic-api-gateway-2.3.1.jar --output server1.jar
+RUN curl $REGISTRY/ui_server-maven-staging-amsterdam/org/springframework/samples/petclinic/api/spring-petclinic-api-gateway/2.3.1/spring-petclinic-api-gateway-2.3.1.jar --output ui_server1.jar
 
 
 # Set JAVA OPTS + Static file location
@@ -23,7 +23,7 @@ ENV JAVA_OPTS=""
 
 # Fire up our Spring Boot app
 #ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Dspring.profiles.active=remote -Djava.security.egd=file:/dev/./urandom -jar /app/server1.jar" ]
-ENTRYPOINT ["java","-jar","/app/server1.jar"]
+ENTRYPOINT ["java","-jar","/app/ui_server1.jar"]
 
 
 
