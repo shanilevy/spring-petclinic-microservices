@@ -11,7 +11,7 @@ FROM $REGISTRY/openjdk:11-jdk
 ARG REGISTRY=http://artifactory-unified-ha.soleng-us.jfrog.team/artifactory
 MAINTAINER Shani Levy
 
-EXPOSE 8080
+EXPOSE 8888
 
 # Download artifacts from Artifactory
 RUN curl $REGISTRY/config_server-maven-staging-amsterdam/org/springframework/samples/petclinic/config/spring-petclinic-config-server/2.3.1/spring-petclinic-config-server-2.3.1.jar --output server1.jar
