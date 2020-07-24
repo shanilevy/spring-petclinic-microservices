@@ -10,7 +10,7 @@ WORKDIR /app
 #Define ARG Again -ARG variables declared before the first FROM need to be declered again
 ARG REGISTRY=http://artifactory-unified-ha.soleng-us.jfrog.team/artifactory
 MAINTAINER Shani Levy
-EXPOSE 8761
+EXPOSE 8081
 
 # Download artifacts from Artifactory
 RUN curl $REGISTRY/customer_service-maven-staging-amsterdam/org/springframework/samples/petclinic/client/spring-petclinic-customers-service/2.3.1/spring-petclinic-customers-service-2.3.1.jar --output customers_server1.jar
